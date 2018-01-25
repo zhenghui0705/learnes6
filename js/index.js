@@ -86,3 +86,17 @@ MYAPP.foo = function(){
 局部作用域
 
 */
+
+
+// window.onload = function(){
+//     var setBtr = document.getElementById('setBox');
+//     var setBtg = setBtr.getElementsByTagName('input');
+//     console.log(setBtg);
+    
+// };
+
+
+$(document).ready(function(){
+    console.log($);
+    
+})

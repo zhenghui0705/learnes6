@@ -1,71 +1,69 @@
-@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
 }
 
-#hr {
-    width: 100%;
-    height: 3px;
-    background: #000;
-}
-
-li {
+ul li {
     list-style: none;
 }
 
 a {
+    display: block;
     text-decoration: none;
 }
 
-/*reset结束*/
-
-.top {
-    width: 100%;
-    margin: 0 auto;
+#clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+    overflow: hidden;
 }
 
-.top-list {
-    width: 80%;
-    margin: 0 auto;
-    height: 60px;
-    background: #3c3c3c;
-    position: relative;
-}
 
-.top-logo {
-    width: 100px;
-    height: 60px;
-    background: #8e8e8e;
-    text-align: center;
-    line-height: 60px;
-}
-
-.top-log-img {
-    line-height: 60px;
-}
-
-.top-bar {
-    position: absolute;
-    top: 0;
-    right: 100px;
-    line-height: 60px;
-}
-
-.top-bar ul li {
-    float: left;
-    padding: 0 20px;
-}
-
-.top-bar ul li a {
-    color: #eee;
-    font-family: '微软雅黑';
-}
-
-/*  */
+/* reset样式结束 */
 
 #box {
-    width: 200px;
-    height: 200px;
+    width: 1080px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+.box-list {
+    width: 810px;
+    height: 400px;
+    margin: 70px auto;
+}
+
+.box-list-icon {
+    width: 133px;
+    float: left;
+    height: 130px;
+    border: 1px solid #000;
+}
+
+.box-list-icon:nth-child(1){
+    background: #f44336;
+}
+.box-list-icon:nth-child(2){
+    background: #e91e63;
+}
+.box-list-icon h2 {
+    display: block;
+    line-height: 130px;
+    text-align: center;
+}
+
+.text-box{
+    width: 810px;
+    height: 136px;
     background: #000;
+}
+
+.text-content{
+    text-align: center;
+    color: #ffff;
+    padding: 38px 0px;
+    text-indent: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
