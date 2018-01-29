@@ -23,10 +23,8 @@ a {
 /* reset样式结束 */
 
 #box {
-    width: 1080px;
-    height: 600px;
+    width: 100%;
     margin: 0 auto;
-    border: 1px solid #000;
 }
 
 .box-list {
@@ -39,31 +37,39 @@ a {
     width: 133px;
     float: left;
     height: 130px;
-    border: 1px solid #000;
+    border: 1px solid #000000;
+    cursor: pointer;
 }
-
 .box-list-icon:nth-child(1){
     background: #f44336;
 }
 .box-list-icon:nth-child(2){
-    background: #e91e63;
+    background: #8bc34a;
 }
-.box-list-icon h2 {
+.box-list-icon:last-child{
+    background: #ff9800;
+}
+.box-list-icon h3 {
     display: block;
     line-height: 130px;
     text-align: center;
+    font-family: '方正舒体';
+    font-weight: 800;
+    font-size: 20px;    
 }
 
-.text-box{
+#text-box{
     width: 810px;
     height: 136px;
     background: #000;
+    overflow: hidden;
 }
 
 .text-content{
     text-align: center;
-    color: #ffff;
+    color: #fff;
     padding: 38px 0px;
     text-indent: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
 }

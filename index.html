@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,67 @@
     <title>LearnEs6</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <div id="box">
         <div class="box-list">
             <div id="clearfix">
-                <div class="box-list-icon"><h2>一月</h2></div>
-                <div class="box-list-icon"><h2>二月</h2></div>
-                <div class="box-list-icon"><h2>三月</h2></div>
-                <div class="box-list-icon"><h2>四月</h2></div>
-                <div class="box-list-icon"><h2>五月</h2></div>
-                <div class="box-list-icon"><h2>六月</h2></div>
-                <div class="box-list-icon"><h2>七月</h2></div>
-                <div class="box-list-icon"><h2>八月</h2></div>
-                <div class="box-list-icon"><h2>九月</h2></div>
-                <div class="box-list-icon"><h2>十月</h2></div>
-                <div class="box-list-icon"><h2>十一月</h2></div>
-                <div class="box-list-icon"><h2>十二月</h2></div>
+                <div class="box-list-icon">
+                    <h3 id="btsilde">一月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>二月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>三月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>四月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>五月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>六月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>七月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>八月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>九月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>十月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>十一月</h3>
+                </div>
+                <div class="box-list-icon">
+                    <h3>十二月</h3>
+                </div>
             </div>
-            <div class="text-box">
-                        <p class="text-content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cum, sunt, et quia nostrum assumenda minima voluptates labore officiis optio doloremque molestias vel voluptatibus tenetur exercitationem. Laboriosam, similique. Illum, iure.
-                        </p>  
-            </div>
+            <div id="text-box">
+                <p class="text-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cum, sunt, et quia nostrum assumenda minima voluptates
+                    labore officiis optio doloremque molestias vel voluptatibus tenetur exercitationem. Laboriosam, similique.
+                    Illum, iure.
+                </p>
+            </div>          
         </div>
     </div>
-<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="./js/index.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        $(document).ready(function () {
+            var btr = $('.box-list-icon h3')
+            var textBox = $('#text-box')            
+            btr.click(function () {
+                textBox.slideToggle('slow')
+            })
+        });
+    </script>
 </body>
 </html>

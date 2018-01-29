@@ -92,11 +92,64 @@ MYAPP.foo = function(){
 //     var setBtr = document.getElementById('setBox');
 //     var setBtg = setBtr.getElementsByTagName('input');
 //     console.log(setBtg);
-    
+
 // };
 
+/* var myBrthid = {
+    name: 'xiaoming',
+    year: 1995,
+    age: function () {
+        var that = this; //用that变量先获取this
+        function setAge() {
+            var y = new Date().getFullYear()
+            return y - myBrthid.year //用that获取myBrthid.year
+        }
+       return setAge();
+    }
+};
+var box = '你今年' + myBrthid.age() + '岁咯！'
+console.log(box);
+ */
 
-$(document).ready(function(){
-    console.log($);
-    
-})
+
+
+/*  var myBrthid = {
+     name:'xiaoming',
+     year: 1995,
+     age:function(){
+         var k =  new Date().getFullYear();
+         return k - this.year
+     }
+ };
+
+console.log(myBrthid.age())
+ */
+
+/* 
+function age() {
+    var y = new Date().getFullYear();
+    return y - this.birth
+}
+
+var xiaoming = {
+    name: '小明',
+    birth: 1995,
+    age: age
+};
+console.log(age.call(xiaoming,[]));
+console.log(age.apply(xiaoming,[]));
+
+apply()把参数打包成Array再传入；
+call()把参数按顺序传入 */
+
+
+
+function sum(x,y,f){
+    return f(x) + f(y)
+}
+console.log(sum(2,3,Math.abs));
+
+
+
+
+
