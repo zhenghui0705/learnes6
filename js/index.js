@@ -143,13 +143,135 @@ apply()把参数打包成Array再传入；
 call()把参数按顺序传入 */
 
 
-
-function sum(x,y,f){
-    return f(x) + f(y)
+//高阶函数能让一个函数里能接收另外一个函数
+/* 
+在function 设置一个变量，通过这个变量来调用函数本身。
+function add(x,y,f){
+    return f(x) + f(y);
 }
-console.log(sum(2,3,Math.abs));
+var z = add(-5 , 5 , Math.abs)
+console.log(z);
+console.log(Math.abs);//绝对值
+
+ */
+
+/* function sum(x){
+    return  x * x
+}
+
+var pre = [1,2,3,4,5,6,7,8,9];
+var soure = pre.map(sum)
+console.log(soure); */
 
 
+/* var obj = {
+    birth:1990,
+    getAge:function(){
+        var b = this.birth;
+        var fn = function(){
+            return new Date().getFullYear() - this.birth;
+        }
+        return fn();
+    }
+};
+console.log(obj.getAge());
+
+var att = {
+    birth:1990,
+    getName:function(){
+        var d = this.birth;
+        var fx = () => new Date().getFullYear() - this.birth
+        return fx()
+    }
+};
+console.log(att.getName());
+ */
 
 
+/*  var xiaoming = {
+     name : 'zhenghui',
+     birth : 1995,
+     height : 175,
+     weight : '70kg',
+     love : ['java','css','vue','gits'],
+     tel : 18171493587,
+     toJSON : function(){//只输出name和age，并且改变了key：
+         return{
+             'NAME' : this.name,
+             'BIRTH' : this.birth
+         };
+     }
+ };
+/*  function convert(value,key){
+     if(typeof key === 'string'){
+         return key.toUpperCase() //把所有属性变成大写。
+     }else {
+         return key
+     }
+ } 
+ var sum = JSON.stringify(xiaoming,null,' ')
+ var sox = JSON.stringify(xiaoming)
+ var sir = JSON.stringify(xiaoming,['love',]) //第二个参数用于控制如何筛选对象的键值，如果我们只想输出指定的属性，可以传入Array：
+ //var fun = JSON.stringify(xiaoming,convert, ' ')//传入一个函数，这样对象的每个键值对都会被函数先处理
+ var tos = JSON.stringify(xiaoming)
+//console.log(sum);
+//console.log(sox);
+//console.log(sir);//{"love":["音乐","电影","技术","前端"]}
+//console.log(fun);
+console.log(tos);
+ */
 
+
+/*
+//创建对象 
+var Student = {
+    name : 'xiaoming',
+    age : 22,
+    run : function(){
+        console.log(this.name + ' is runing!');
+    }
+};
+
+//基于Student原型创建一个新的对象
+function setAge(name){
+    var s = Object.create(Student);
+//初始化对象
+    s.name = name
+    return s;
+}
+
+var xiaoming = setAge('xiaoming')
+//xiaoming is runing!
+xiaoming.run()
+//true
+console.log(xiaoming.__proto__ === Student);
+*/
+
+
+//构造函数
+
+/* function Student(name){
+    this.name = name;
+    this.age = function(){
+        console.log(this.name + '飞走了！');   
+    }
+}
+var xiaoming = new Student('小明')
+xiaoming.age()
+ */
+
+//class继承
+
+/* class Student {
+    constructor(name){
+        this.name = name
+    }
+    run(){
+        console.log(this.name + '飞走了。。。'); 
+    }
+}
+var xiaoming = new Student('小明')
+xiaoming.run() */
+class rpeStudent extends Student{
+
+}

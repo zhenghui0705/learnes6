@@ -57,17 +57,22 @@ a {
     font-weight: 800;
     font-size: 20px;    
 }
-
-#text-box{
+#content-box{
+    background: #8bc34a85;
+    height: 136px;
+    width: 808px;
+    box-shadow: 2px 2px 5px 0px #000;
+}
+.text-box{
     width: 810px;
     height: 136px;
-    background: #000;
     overflow: hidden;
+    display: none;
 }
 
 .text-content{
     text-align: center;
-    color: #fff;
+    color:#000;
     padding: 38px 0px;
     text-indent: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
