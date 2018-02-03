@@ -154,3 +154,8 @@ a {
     background: #8bc34a;
     color: #000000;
 }
+
+.foot-content h2{
+    text-align: center;
+    line-height: 66px;
+}
