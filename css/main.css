@@ -150,12 +150,24 @@ a {
 
 .foot-content {
     width: 100%;
-    height: 200px;
-    background: #8bc34a;
     color: #000000;
 }
 
-.foot-content h2{
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
     text-align: center;
-    line-height: 66px;
-}
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+    background-color: #3866a5;
+    background: url("http://imgstore.cdn.sogou.com/app/a/100540002/406489.jpg")
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #0e974c;
+    background: url('http://dl.bizhi.sogou.com/images/2012/09/30/39962.jpg?f=download')
+  }
