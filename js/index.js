@@ -272,6 +272,4 @@ xiaoming.age()
 }
 var xiaoming = new Student('小明')
 xiaoming.run() */
-class rpeStudent extends Student{
 
-}

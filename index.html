@@ -5,70 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LearnEs6</title>
+    <title>LearnEs6</title> 
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"><!-- element-ui饿了么 -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <div id="box">
-        <div class="box-list">
-            <div id="clearfix">
-                <div class="box-list-icon">
-                    <h3 id="btsilde">一月</h3>
+    <div id="bg">
+        <div id="bg-shadow">
+            <div id="box">
+                <div id="top">
+                    <div class="top-content">
+                        <div class="top-logo"></div>
+                        <div class="top-list">
+                            <ul>
+                                <li>
+                                    <a href="">首页</a>
+                                </li>
+                                <li>
+                                    <a href="">javascript</a>
+                                </li>
+                                <li>
+                                    <a href="">从入门</a>
+                                </li>
+                                <li>
+                                    <a href="">到</a>
+                                </li>
+                                <li>
+                                    <a href="">放弃啊！</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="box-list-icon">
-                    <h3>二月</h3>
+                <div class="box-list">
+                    <div id="clearfix">
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">一月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">二月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">三月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">四月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">五月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">六月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">七月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">八月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">九月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">十月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">十一月</h3>
+                        </div>
+                        <div class="box-list-icon">
+                            <h3 id="btsilde">十二月</h3>
+                        </div>
+                    </div>
+                    <div id="content-box">
+                        <div class="text-box">
+                            <p class="text-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cum, sunt, et quia nostrum assumenda minima voluptates
+                                labore officiis optio doloremque molestias vel voluptatibus tenetur exercitationem. Laboriosam,
+                                similique. Illum, iure.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="box-list-icon">
-                    <h3>三月</h3>
-                </div>
-                <div class="box-list-icon">
-                    <h3>四月</h3>
-                </div>
-                <div class="box-list-icon">
-                    <h3>五月</h3>
-                </div>
-                <div class="box-list-icon">
-                    <h3>六月</h3>
-                </div>
-                <div class="box-list-icon">
-                    <h3>七月</h3>
-                </div>
-                <div class="box-list-icon">
-                    <h3>八月</h3>
-                </div>
-                <div class="box-list-icon">
-                    <h3>九月</h3>
-                </div>
-                <div class="box-list-icon">
-                    <h3>十月</h3>
-                </div>
-                <div class="box-list-icon">
-                    <h3>十一月</h3>
-                </div>
-                <div class="box-list-icon">
-                    <h3>十二月</h3>
+                <div id="footer">
+                    <div class="foot-content">
+
+                    </div>
                 </div>
             </div>
-            <div id="content-box">
-                <div class="text-box">
-                    <p class="text-content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cum, sunt, et quia nostrum assumenda minima voluptates
-                        labore officiis optio doloremque molestias vel voluptatibus tenetur exercitationem. Laboriosam, similique.
-                        Illum, iure.
-                    </p>
-                </div>    
-            </div>      
         </div>
     </div>
     <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    
     <script src="./js/index.js"></script>
     <script>
-        $(function(){
-            $('.box-list-icon').click(function(){
-                $('.text-box').slideToggle('slow')
+        $(document).ready(function () {
+            var btr = $('#btsilde')
+            btr.click(function () {
+                btr.animate({
+                    height : "85px"
+                })
             })
-        });
+        })
     </script>
 </body>
+
 </html>
