@@ -67,8 +67,8 @@ a {
 
 .top-list ul li a {
     color: #cccccc;
-    padding: 0 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 16px;
+    font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 /* top样式结束 */
@@ -88,22 +88,18 @@ a {
     width: 133px;
     float: left;
     height: 130px;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     cursor: pointer;
 }
 
 .box-list-icon h3 {
-    display: block;
-    width: 65px;
-    height: 50px;
+    width: 132px;
+    height: 130px;
     line-height: 130px;
     color: #ffffff;
-    margin: 10px auto 0;
     text-align: center;
     font-family: '方正舒体';
-    font-weight: 800;
     font-size: 20px;
-    background: #000000;
 }
 
 .box-list-icon:nth-child(1) {
@@ -160,14 +156,60 @@ a {
     line-height: 300px;
     margin: 0;
     text-align: center;
-  }
-  
-  .el-carousel__item:nth-child(2n) {
+}
+
+.el-carousel__item:nth-child(2n) {
     background-color: #3866a5;
     background: url("http://imgstore.cdn.sogou.com/app/a/100540002/406489.jpg")
-  }
-  
-  .el-carousel__item:nth-child(2n+1) {
+}
+
+.el-carousel__item:nth-child(2n+1) {
     background-color: #0e974c;
     background: url('http://dl.bizhi.sogou.com/images/2012/09/30/39962.jpg?f=download')
-  }
+}
+
+
+
+
+.rightBar{
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 638px;
+    background: #3866a5;
+    z-index: 10;
+}
+
+.rightBar ul li {
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 0;
+    width:100%;
+    text-align: center;
+    color: #cccccc;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.rightBar ul li:hover{
+    background: #0e974c;
+}
+.rightBar ul h2{
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.copy{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 20px 0px;
+}
