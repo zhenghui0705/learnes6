@@ -158,14 +158,16 @@ a {
     text-align: center;
 }
 
-.el-carousel__item:nth-child(2n) {
+.el-carousel__item:nth-child(1n) {
     background-color: #3866a5;
-    background: url("http://imgstore.cdn.sogou.com/app/a/100540002/406489.jpg")
+    background: url('../images/banenrs/sex-2.png');
+    background-size: 100%;
 }
 
 .el-carousel__item:nth-child(2n+1) {
     background-color: #0e974c;
-    background: url('http://dl.bizhi.sogou.com/images/2012/09/30/39962.jpg?f=download')
+    background: url('../images/banenrs/sex-4.png');
+    background-size: 100%;
 }
 
 
